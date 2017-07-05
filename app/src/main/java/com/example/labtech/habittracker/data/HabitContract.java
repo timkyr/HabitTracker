@@ -9,7 +9,8 @@ import android.provider.BaseColumns;
 public final class HabitContract {
     // To prevent someone from accidentally instantiating the contract class,
     // make the constructor private.
-    private HabitContract() {}
+    private HabitContract() {
+    }
 
     /* Inner class that defines the table contents */
     public static class HabitEntry implements BaseColumns {
@@ -23,10 +24,10 @@ public final class HabitContract {
         /**
          * Possible values for the category.
          */
-        public static final int CATEGORY_VARIOUS= 0;
+        public static final int CATEGORY_VARIOUS = 0;
         public static final int CATEGORY_BASIC_NEEDS = 1;
-        public static final int CATEGORY_EXERCISE= 2;
-        public static final int CATEGORY_FUN= 3;
+        public static final int CATEGORY_EXERCISE = 2;
+        public static final int CATEGORY_FUN = 3;
 
     }
 
